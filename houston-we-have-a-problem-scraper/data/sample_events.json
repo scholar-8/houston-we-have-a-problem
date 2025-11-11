@@ -1,0 +1,16 @@
+[
+    {
+        "event_time": "2025-11-12T08:32:14Z",
+        "system_name": "Houston_PowerGrid",
+        "error_code": "500",
+        "severity": "critical",
+        "description": "Unexpected power failure detected in sector 5."
+    },
+    {
+        "event_time": "2025-11-12T08:45:50Z",
+        "system_name": "Houston_Transit",
+        "error_code": "403",
+        "severity": "high",
+        "description": "Unauthorized access attempt to the transit monitoring system."
+    }
+]
