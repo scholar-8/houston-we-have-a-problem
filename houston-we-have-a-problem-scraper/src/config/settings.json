@@ -1,0 +1,17 @@
+{
+  "log_file": "data/logs/system_errors.log",
+  "output": {
+    "summary_json": "data/samples/sample_output.json",
+    "summary_csv": "data/samples/sample_output.csv"
+  },
+  "notifier": {
+    "enable_console": true,
+    "slack_webhook_url": null,
+    "email_recipients": []
+  },
+  "alert_threshold": {
+    "severity": "high",
+    "min_new_errors": 1
+  },
+  "environment": "development"
+}
