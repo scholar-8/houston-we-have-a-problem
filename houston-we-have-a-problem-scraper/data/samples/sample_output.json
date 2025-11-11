@@ -1,0 +1,80 @@
+{
+  "generatedAt": "2025-11-12T10:20:00Z",
+  "totalErrors": 7,
+  "bySeverity": {
+    "high": 4,
+    "medium": 2,
+    "low": 1
+  },
+  "byType": {
+    "RuntimeError": 1,
+    "DBTimeout": 2,
+    "ValidationError": 1,
+    "ConfigError": 1,
+    "NetworkError": 1,
+    "LogicError": 1
+  },
+  "byEnvironment": {
+    "production": 4,
+    "staging": 2,
+    "development": 1
+  },
+  "statusCounts": {
+    "new": 4,
+    "recurring": 2,
+    "resolved": 1
+  },
+  "topRecurringErrors": [
+    {
+      "errorMessage": "Database connection timeout",
+      "filePath": "services/db/connection_pool.py",
+      "lineNumber": 88,
+      "environment": "production",
+      "severity": "high",
+      "errorType": "DBTimeout",
+      "occurrences": 2
+    },
+    {
+      "errorMessage": "Division by zero in analytics pipeline",
+      "filePath": "services/analytics/calculator.py",
+      "lineNumber": 142,
+      "environment": "production",
+      "severity": "high",
+      "errorType": "RuntimeError",
+      "occurrences": 1
+    }
+  ],
+  "byFile": {
+    "services/analytics/calculator.py": [
+      {
+        "errorMessage": "Division by zero in analytics pipeline",
+        "errorType": "RuntimeError",
+        "timestamp": "2025-11-12T10:15:23Z",
+        "severity": "high",
+        "lineNumber": 142,
+        "environment": "production",
+        "status": "new"
+      }
+    ],
+    "services/db/connection_pool.py": [
+      {
+        "errorMessage": "Database connection timeout",
+        "errorType": "DBTimeout",
+        "timestamp": "2025-11-12T10:16:02Z",
+        "severity": "high",
+        "lineNumber": 88,
+        "environment": "production",
+        "status": "recurring"
+      },
+      {
+        "errorMessage": "Database connection timeout",
+        "errorType": "DBTimeout",
+        "timestamp": "2025-11-12T10:18:10Z",
+        "severity": "high",
+        "lineNumber": 88,
+        "environment": "production",
+        "status": "recurring"
+      }
+    ]
+  }
+}
